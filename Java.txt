@@ -1,0 +1,62 @@
+
+
+### 1. *What is Java?*
+   - *Answer:* Java is a high-level, object-oriented programming language designed to have as few implementation dependencies as possible. It's widely used for building applications, from mobile apps to enterprise-level systems.
+
+### 2. *What are the main features of Java?*
+   - *Answer:* Some key features include:
+     - *Object-Oriented:* Everything in Java is an object.
+     - *Platform Independent:* Java code runs on any platform that has the Java Virtual Machine (JVM).
+     - *Simple and Familiar:* Java’s syntax is similar to C++, making it easy to learn.
+     - *Secure:* Java has features like bytecode verification and garbage collection to ensure security.
+     - *Robust:* Strong memory management and exception handling.
+     - *Multithreaded:* Java can handle multiple tasks simultaneously.
+
+### 3. *What is the difference between JDK, JRE, and JVM?*
+   - *Answer:*
+     - *JDK (Java Development Kit):* A software development environment used for developing Java applications. It includes JRE, an interpreter/loader (Java), a compiler (javac), an archiver (jar), and documentation generator (Javadoc).
+     - *JRE (Java Runtime Environment):* Provides the libraries, Java Virtual Machine (JVM), and other components to run applications written in Java.
+     - *JVM (Java Virtual Machine):* An abstract machine that enables your computer to run Java programs by converting bytecode into machine code.
+
+### 4. *What is a Class in Java?*
+   - *Answer:* A class is a blueprint or template that defines the properties (fields) and behaviors (methods) that the objects created from the class will have.
+
+### 5. *What is an Object in Java?*
+   - *Answer:* An object is an instance of a class. It contains states (attributes/fields) and behaviors (methods/functions).
+
+### 6. *What is Inheritance?*
+   - *Answer:* Inheritance is a mechanism in Java where one class (child/subclass) can inherit fields and methods from another class (parent/superclass). It allows code reuse and establishes a parent-child relationship between classes.
+
+### 7. *What is Polymorphism?*
+   - *Answer:* Polymorphism allows objects of different classes to be treated as objects of a common superclass. It's mainly achieved through method overriding (runtime polymorphism) and method overloading (compile-time polymorphism).
+
+### 8. *What is an Interface in Java?*
+   - *Answer:* An interface is a reference type in Java, similar to a class, that can contain only constants, method signatures, default methods, static methods, and nested types. Interfaces cannot have instance variables or constructors, and classes can implement multiple interfaces.
+
+### 9. *What is Encapsulation?*
+   - *Answer:* Encapsulation is the technique of wrapping the data (variables) and code (methods) together as a single unit. In Java, this is achieved using access modifiers like private, protected, and public.
+
+### 10. *What is the difference between ‘==’ and ‘equals()’ in Java?*
+   - *Answer:* 
+     - **== Operator:** Used to compare the reference or memory location of objects, not the content.
+     - **equals() Method:** Used to compare the actual content of objects.
+
+### 11. *What is a Constructor?*
+   - *Answer:* A constructor is a block of code similar to a method that's called when an instance of an object is created. It initializes the object and its fields. Constructors have the same name as the class and do not have a return type.
+
+### 12. **What is the difference between final, finally, and finalize?**
+   - *Answer:*
+     - **final:** A keyword used to define constants or to prevent inheritance or method overriding.
+     - **finally:** A block in a try-catch structure that executes regardless of whether an exception is thrown or not.
+     - **finalize():** A method in Java used to perform cleanup operations before an object is garbage collected.
+
+### 13. *What is Exception Handling in Java?*
+   - *Answer:* Exception handling is a mechanism to handle runtime errors, ensuring the normal flow of the application. This is done using try-catch blocks.
+
+### 14. **What is the purpose of the static keyword?**
+   - *Answer:* The static keyword in Java is used for memory management mainly. It can be applied to variables, methods, blocks, and nested classes. The static keyword means that the particular member belongs to a type itself, rather than to an instance of that type.
+
+### 15. *What is a Package in Java?*
+   - *Answer:* A package is a namespace that organizes a set of related classes and interfaces. Packages help prevent naming conflicts and can also control access with the use of access modifiers.
+**********************************************************************************************************************************************************************
+

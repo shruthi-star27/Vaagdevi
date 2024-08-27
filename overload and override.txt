@@ -1,0 +1,72 @@
+### *Method Overloading*
+
+1. *What is method overloading in Java?*
+   - *Answer:* Method overloading in Java occurs when multiple methods in the same class have the same name but different parameters (different type, number, or both). It allows a class to perform a single action in different ways.
+
+2. *How does Java distinguish between overloaded methods?*
+   - *Answer:* Java distinguishes between overloaded methods by their method signatures, which include the method name and the parameter list. The return type and access modifier can be different, but they are not considered when distinguishing overloaded methods.
+
+3. *Can you overload a method by just changing the return type?*
+   - *Answer:* No, you cannot overload a method by just changing its return type. The parameter list must be different; otherwise, the compiler will throw an error.
+
+4. *Give an example of method overloading.*
+   - *Answer:* 
+     java
+     public class Calculator {
+         public int add(int a, int b) {
+             return a + b;
+         }
+
+         public double add(double a, double b) {
+             return a + b;
+         }
+
+         public int add(int a, int b, int c) {
+             return a + b + c;
+         }
+     }
+     
+     In this example, the add method is overloaded with different parameter lists.
+
+5. *Can we overload static methods in Java?*
+   - *Answer:* Yes, static methods can be overloaded in Java. The rules for overloading are the same for static and non-static methods.
+
+6. *Is it possible to overload the main method in Java?*
+   - *Answer:* Yes, you can overload the main method in Java, but the JVM will only call the one with the standard signature: public static void main(String[] args). Other overloaded versions can be called from the standard main method.
+
+### *Method Overriding*
+
+1. *What is method overriding in Java?*
+   - *Answer:* Method overriding occurs when a subclass provides a specific implementation for a method that is already defined in its superclass. The method in the child class should have the same name, return type, and parameters as the method in the parent class.
+
+2. *What are the rules for method overriding in Java?*
+   - *Answer:*
+     - The method must have the same name, return type, and parameter list as the method in the parent class.
+     - The overriding method cannot have a more restrictive access modifier than the overridden method.
+     - The overriding method can throw the same, fewer, or no checked exceptions.
+
+3. *Can we override static methods?*
+   - *Answer:* No, static methods cannot be overridden because they belong to the class rather than any instance of the class. If you define a static method with the same signature in a subclass, it will hide the superclass method, not override it. This is called method hiding.
+
+4. **What is the @Override annotation, and why is it used?**
+   - *Answer:* The @Override annotation is used in Java to indicate that a method is intended to override a method in a superclass. It's optional but recommended because it helps catch errors at compile time, ensuring that you are indeed overriding a method and not accidentally creating a new method.
+
+5. **Can we override a method that is declared final?**
+   - *Answer:* No, you cannot override a method that is declared as final in Java. The final keyword prevents the method from being modified in any subclass.
+
+6. *Can a constructor be overridden?*
+   - *Answer:* No, constructors cannot be overridden. Constructors are not inherited, so they do not participate in inheritance and overriding.
+
+7. *What is the difference between method overloading and method overriding?*
+   - *Answer:*
+     - *Method Overloading:* Occurs within the same class and involves methods with the same name but different parameter lists.
+     - *Method Overriding:* Occurs between a superclass and a subclass, where the subclass provides a specific implementation of a method already defined in the superclass with the same parameter list.
+
+8. *Why do we use method overriding?*
+   - *Answer:* Method overriding is used to provide a specific implementation of a method in a subclass that is already defined in its superclass. It allows for runtime polymorphism, where the appropriate method is called based on the object that invokes it.
+
+9. *What happens if you call a method from a superclass that has been overridden in the subclass?*
+   - *Answer:* If you call a method on an object of the subclass that has been overridden, the subclass's version of the method will be executed, even if the method is called using a reference to the superclass.
+
+10. *Can we override a private method in Java?*
+    - *Answer:* No, private methods cannot be overridden because they are not accessible outside the class they are declared in. If a method with the same signature is defined in a subclass, it is a new method, not an overridden one.
